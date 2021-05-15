@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="test.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<form id ='testvalid' name="testvalidform" method="post" action=" https://fe.it-academy.by/TestForm.php">        
+<div class="form">
+
+<div class="form_line">
+    <label for = 'devel_name'>Разработчики:</label>
+    <input id ='devel_name' type="text" name="developer" >
+    <span id="develError"></span>
+</div>
+
+<div class="form_line">
+    <label for = 'site_name'>Название сайта:</label> 
+    <input id="site_name" type="text" name="website">
+    <span id="siteError"></span>
+</div>
+
+<div class="form_line"> 
+    <label for = 'url_name'>URL сайта:</label>
+     <input id='url_name' type="url" name="url">
+     <span id="urlError"></span>
+</div>
+
+<div class="form_line">
+    <label for = 'date_start'>Дата запуска сайта:</label>
+     <input id="date_start" type="date" name="date">
+     <span id="dataError"></span>
+</div>
+
+<div class="form_line">
+    <label for = 'count_visitors'>Посетителей в сутки:</label>      
+    <input id ='count_visitors' type="text" name="count">
+    <span id="visitorError"></span>
+</div>
+
+<div class="form_line">
+    <label for = 'mail'> E-mail для связи:</label> 
+    <input id="mail" type="email" name="email">
+    <span id="mailError"></span>
+</div>
+
+<div class="form_line">
+    <label for = 'rubr'>Рубрика каталога:</label> 
+    <select id="rubr" name="rubrica">
+       <option value="null"></option>
+       <option value="tech">бытовая техника</option>
+       <option value="helth">здоровье</option> 
+       <option value="home">домашний уют</option>
+    </select>
+    <span id="rubrError"></span>
+</div>
+
+<div class="form_line">
+    <label for id="place">Размещение:</label>
+     <input id ='place1' type="radio" name="answer" value ="free" ><span>беплатное</span>     
+     <input id ='place2' type="radio" name="answer" value ="pay"><span>платное</span>     
+     <input id ='place3' type="radio" name="answer" value ="vip"><span>VIP</span>     
+     <span id="placeError"></span>
+</div>
+
+<div class="form_line">
+    <label for="check">Разрешить отзывы:</label> 
+      <input id ='check' name="agree" type="checkbox"> 
+      <span id="checkError"></span>
+</div>
+
+<div class="form_line">
+   <label for="descr">Описание сайта:</label> 
+    <textarea name="description" id="descr" cols="80" rows="5"></textarea>
+    <span id="descrError"></span>
+</div>
+
+<button type="submit" id='submit'>Опубликовать</button>
+</div>
+ </form>
+</body>
+</html>

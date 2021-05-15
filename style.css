@@ -1,0 +1,35 @@
+#develError,
+#siteError,
+#urlError,
+#dataError,
+#visitorError,
+#mailError,
+#rubrError,
+#placeError,
+#checkError,
+#descrError{
+    color:red;
+}
+.form_line label{
+    float:left;
+    clear:left;
+    width:150px;    
+    margin-right:20px;   
+    font-size:18px;
+  }
+
+  .form_line input, span, select{
+    float:left;
+    margin-bottom:10px;
+  } 
+  form textarea {
+    float:left;
+    width:350px;
+    height:150px;
+  }
+  [type="submit"] {
+    clear:left;
+    margin:20px 00230px;
+    font-size:18px
+  }
+
